@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <form>
+    <h1>User Information</h1>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label> 
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select Country</option>
+      <option value="burundi">Burundi</option>
+      <option value="rwanda">Rwanda</option>
+      <option value="nigeria">Nigeria</option>
+      <option value="ghana">Ghana</option>
+    </select>
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required> 
+    <label for="female">Female</label>
+
+    <p>Hobbies:</p>
+    <input type="checkbox" id="reading" name="reading" value="reading">
+    <label for="reading"> Reading</label>
+    <input type="checkbox" id="sports" name="sports" value="sports">
+    <label for="sports"> Sports</label>
+    <input type="checkbox" id="music" name="music" value="music">
+    <label for="music"> Music</label>
+    <input type="checkbox" id="travel" name="travel" value="travel">
+    <label for="travel">Travel</label>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
